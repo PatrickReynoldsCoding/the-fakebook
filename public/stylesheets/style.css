@@ -1,8 +1,108 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+* {
+  margin: 0;
+  color: rgb(196,198,203);
+  background-color: rgb(24, 25, 26);
 }
 
+
+body {
+  background-color: rgba(24, 25, 26, 0.805);
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  
+}
+
+avatarImg
 a {
   color: #00B7FF;
+}
+
+.main-body {
+  display: flex;
+}
+
+/* sidebar start */
+.sidebar {
+  padding: 25px 10px;
+  flex: 0.33;
+  display: block;
+  justify-content:space-between;
+}
+
+
+
+.sidebarRow .material-symbols-outlined{
+  font-size: 400%;
+  color: rgb(194, 194, 194);
+}
+
+.avatarImg {
+  height: 50px;
+  border-radius: 100%;
+  width: 50px;
+}
+
+.sidebarRow {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48,
+}
+
+.sidebarRow:hover {
+  background-color: rgb(37, 37, 38);
+  border-radius: 10px;
+  }
+
+
+.sidebar h4 {
+  margin-left: 20px;
+  font-weight: 400;
+}
+
+
+/* sidebar end */
+
+/* wall start */
+
+.whats-on-your-mind {
+  display: flex;
+  align-items: center;
+  margin-top: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(37, 37, 38);
+  height: 120px;
+  width: 700px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 7px -7px rgba(255, 255, 255, 0.75);
+  border-bottom: 1px solid #eff2f5;
+  padding: 5px;
+ 
+}
+
+.wallPosts {
+  background-color: rgb(37, 37, 38);
+}
+
+.new-post-form {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eff2f5;
+  flex: 1;
+  outline-width: 0;
+  border: none; 
+  padding: 15px 70px;
+  margin: 0 10px;
+  border-radius: 999px;
+  
+  background-color: rgb(37, 37, 38);
+}
+.new-post-link {
+  background-color: rgb(37, 37, 38);
 }
