@@ -8,11 +8,4 @@ const CommentSchema = new mongoose.Schema({
 
 const Comment = mongoose.model("Comment", CommentSchema);
 
-
-//class Comment {
-// constructor(text) {
-//    this.text = text;
-//  }
-//}
-
 module.exports = Comment;
