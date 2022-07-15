@@ -7,6 +7,10 @@ const PostSchema = new mongoose.Schema({
     immutable: true,
     default: () => Date.now(),
   },
+  userID: {
+    type: mongoose.Types.ObjectId, 
+    ref: "User",
+  },
 });
 
 PostSchema.methods.formatDate = function() {
