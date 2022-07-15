@@ -15,7 +15,10 @@ const PostsController = {
    
   },
   Create: (req, res) => {
-     const post = new Post(req.body);
+     const post = new Post({
+      message: req.body.message,
+      userID: req.body.userID,
+  });
     post.save((err) => {
       if (err) {
         throw err;

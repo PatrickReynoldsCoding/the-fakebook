@@ -9,12 +9,16 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  username: {
+  //way around cultures not having first/last name
+  firstName: {
     type: String,
-    required: true,
+    required: false,
   },
-  firstName: String,
   lastName: String,
+  // for the profile page
+  // posts: [
+  //   {type: mongoose.Types.ObjectId, ref: "Post"},
+  // ],
 });
 
 const User = mongoose.model("User", UserSchema);
