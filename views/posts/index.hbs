@@ -5,12 +5,12 @@
     <form id="delete-list-button" action="/posts/delete" method="post">
       <input type="submit" name="{{this.message}}" value="Delete posts">
       <input type="hidden" name="_id" value={{this.id}}>
+      <div id="like-button-container"></div>
   </form>
   {{/each}}
-</ul>
-
-
-  
+</ul>  
 <a class="new-post-link" href="/posts/new">New post</a>
 
-
+<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+<script src="like-button.js"></script>
