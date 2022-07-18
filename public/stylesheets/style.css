@@ -7,10 +7,30 @@ a {
   color: #00b7ff;
 }
 
+label {
+  font-size: 20px;
+}
+
 .title {
   font: 54px "Lucida Grande", Helvetica, Arial, sans-serif;
   font-weight: bolder;
   color: rgb(57, 117, 234);
+}
+
+.signup-signin-button {
+  background-color: #1877f2;
+  color: #ffffff;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  height: 48px;
+  font-weight: bold;
+  width: 95px;
+}
+
+.signup-signin-button:hover {
+  background-color: #166fe5;
+  cursor: pointer;
 }
 
 #welcome-paragraph {
