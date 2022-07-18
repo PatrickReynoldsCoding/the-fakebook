@@ -5,6 +5,20 @@ const UsersController = {
     res.render("users/new", {});
   },
 
+  Index: (req, res) => {
+    User.find()
+    .populate("posts")
+    .populate("comments")
+    .populate("author")
+    .exec((err, users) => {
+              if (err) {
+          throw err;
+        }
+      res.render("users/profile", {
+        users: users });
+    });
+  },
+
   Create: (req, res) => {
     const firstNameCapitalized = req.body.firstName[0].toUpperCase() + req.body.firstName.substring(1).toLowerCase();
     const lastNameCapitalized = req.body.lastName[0].toUpperCase() + req.body.lastName.substring(1).toLowerCase();
