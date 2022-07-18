@@ -4,5 +4,31 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+.title {
+  font: 54px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-weight: bolder;
+  color: rgb(57, 117, 234);
+}
+
+#welcome-paragraph {
+  font: 30px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#logout-button {
+  background-color: #1877f2;
+  color: #ffffff;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  height: 60px;
+  font-weight: bold;
+  width: 95px;
+}
+
+#logout-button:hover {
+  background-color: #166fe5;
+  cursor: pointer;
 }
