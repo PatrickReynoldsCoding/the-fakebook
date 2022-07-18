@@ -6,7 +6,14 @@ const UsersController = {
   },
 
   Create: (req, res) => {
-    const user = new User(req.body);
+    const firstNameCapitalized = req.body.firstName[0].toUpperCase() + req.body.firstName.substring(1).toLowerCase();
+    const lastNameCapitalized = req.body.lastName[0].toUpperCase() + req.body.lastName.substring(1).toLowerCase();
+    const user = new User({
+      email: req.body.email,
+      password: req.body.password,
+      firstName: firstNameCapitalized,
+      lastName: lastNameCapitalized,
+    });
     user.save((err) => {
       if (err) {
         throw err;
