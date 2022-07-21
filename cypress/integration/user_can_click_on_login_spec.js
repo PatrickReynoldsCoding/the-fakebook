@@ -7,14 +7,12 @@ describe("Timeline", () => {
     cy.visit("/");
     cy.contains("Log in").click();
 
-    // log in 
+    // log in
     cy.get("#email").type("a@example.com");
     cy.get("#password").type("password");
     cy.get("#submit").click();
 
     // Redirected to posts page
-    cy.contains('Timeline').should('be.visible');
-    
-
+    cy.contains("Timeline").should("be.visible");
   });
 });
