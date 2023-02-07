@@ -2,6 +2,14 @@
 
 Welcome to Acebook! We took everything that people liked about Facebook and made our own version without invading your privacy...or are we mining your data? You'll never know, without diving into the source code above.
 
+---
+
+This Makers Academy Bootcamp project, Acebook, is a simplified version of a social media platform built with a focus on its backend technology stack. 
+
+The project utilized Express, a popular web framework for Node.js, to handle server-side routing and operations. Nodemon was used to automatically reload the server during development, while Handlebars was utilized to render view templates. Mongoose was employed to model data objects in MongoDB, ensuring efficient and organized data management. ESLint was utilized for linting and Jest was employed for testing to ensure code quality. End-to-end testing was performed using Cypress, and the project was integrated with Github for Continuous Integration (CI). 
+
+This one-week project focused on mastery of key backend technologies and best practices.
+
 ## Testing
 ### esLint, unit and integration tests:
 ``` bash
